@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<form action="{{ path('check_form') }}" method="POST">
+    <input type="file" name="userfile">
+    <button type="submit">OK</button>
+</form>
+{% endblock %}
